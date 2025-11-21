@@ -7,6 +7,8 @@
 
 [Model Context Protocol](https://modelcontextprotocol.io) service for accessing Binance cryptocurrency market data.
 
+> **基于原项目**: 此项目基于 [binance-mcp](https://github.com/snjyor/binance-mcp) 修改而来
+
 ## Overview
 
 This MCP service allows AI agents (such as Claude, Cursor, Windsurf, etc.) to execute Binance API calls and obtain real-time data from the cryptocurrency market, including prices, candlestick charts, order books, and more.
@@ -59,7 +61,7 @@ In Cursor IDE:
 3. Fill in the form:
    - Name: `binance`
    - Type: `command`
-   - Command: `npx -y @snjyor/binance-mcp@latest`
+   - Command: `npx -y bach-binance-mcp`
 
 **Project Installation**
 
@@ -72,7 +74,7 @@ Add a `.cursor/mcp.json` file to your project:
       "command": "npx",
       "args": [
         "-y",
-        "@snjyor/binance-mcp@latest"
+        "bach-binance-mcp"
       ]
     }
   }
@@ -96,7 +98,7 @@ After configuration, the Binance market data tools will be automatically availab
       "command": "npx",
       "args": [
         "-y",
-        "@snjyor/binance-mcp@latest"
+        "bach-binance-mcp"
       ]
     }
   }
